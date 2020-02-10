@@ -1,0 +1,12 @@
+.label {
+    text-align: center;
+}
+
+.stack {
+    height: 100%;
+    vertical-align: center;
+}
+
+.color {
+    background-color: purple;
+}

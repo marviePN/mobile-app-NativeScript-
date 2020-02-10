@@ -1,0 +1,24 @@
+<ActionBar title="Description"></ActionBar>
+
+<FlexboxLayout flexDirection="column" class="body">
+    <FlexboxLayout class="m-15" >
+        <Label class="h2" [text]="item.id + '. '"></Label>
+        <Label class="h2" [text]="item.name"></Label>
+    </FlexboxLayout>
+    
+        <Label class="h4 m-15" [text]="item.role"></Label>
+        <label class="h4 m-15"  [text]="item.score"></label>
+           
+        <Button class="btn" text="Update"  (tap)="onUpdate()"></Button>
+
+        <!-- this two button is for adding value and subtracting value in a specific data -->
+
+        
+        <Button text="Click me to add" (tap)="addScore()" class="my-button"></Button>
+        <Button text="Click me to subtract" (tap)="minusScore()" class="my-button" *ngIf="!zero"></Button>
+        
+        <ns-add-to-list *ngIf="show" (dataEvent)="onUpdate($event)" [textBtn]="'Save'" [item]="item" ></ns-add-to-list>
+     
+</FlexboxLayout>
+
+

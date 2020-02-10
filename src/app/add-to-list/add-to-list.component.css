@@ -1,0 +1,17 @@
+.container{
+    background-color: rgb(218, 226, 231);
+    text-align: center;
+    padding-bottom: 30%;
+    
+}
+
+.btn{
+
+    background-color: aqua;
+    border-color: darkolivegreen;
+    border-radius: 10;
+    border-width: 1;
+    color: black;
+    font-size: 15;
+    font-weight: bold;
+}

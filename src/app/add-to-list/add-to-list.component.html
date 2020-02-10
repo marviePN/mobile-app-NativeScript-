@@ -1,0 +1,12 @@
+<StackLayout >
+    <GridLayout padding="50px" rows="50 50" columns="* 2*" class="container" >
+        <Label text="Username:" textWrap="true"></Label>
+        <TextField row="0" col="1"  [(ngModel)]="name"></TextField>
+        <Label row="1" col="0" text="Password:" textWrap="true"></Label>
+        <TextField row="1" col="1" secure="true" [(ngModel)]="role"></TextField>
+    </GridLayout>
+    <Button class="btn" [text]="textBtn" (tap)="onSubmit()" ></Button>
+    
+</StackLayout>
+    
+    
